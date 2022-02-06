@@ -96,11 +96,12 @@ return countMin
  * getMostCommonAnimal([]); //> null // returns null if the input is empty
  */
 function getMostCommonAnimal(animals) {
-  let common = null
-for(i = 0; i < animals.length; i++){
-if(animal[i].count >)
+for(i = 0; i < animals.length - 1; i++){
+if(animals[i].count > animals[i + 1].count){
+  return animals[i]
   }
-  return animal
+}
+  return null
 }
 
 // Do not change anything below this line.
