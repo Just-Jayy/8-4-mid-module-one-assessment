@@ -99,6 +99,7 @@ function getMostCommonAnimal(animals) {
 for(i = 0; i < animals.length - 1; i++){
 if(animals[i].count > animals[i + 1].count){
   return animals[i]
+
   }
 }
   return null
